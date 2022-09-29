@@ -1,6 +1,6 @@
-# 4-Bit Asynchronous Up Counter using Mixed Signal
+# Mixed Signal Circuit Design and Simulation Marathon
 
-## Mixed Signal Circuit Design and Simulation Marathon
+## 4-Bit Asynchronous Up Counter using Mixed Signal
 
 - [Abstract](#abstract)
 - [Reference Circuit Diagram](#reference-circuit-diagram)
