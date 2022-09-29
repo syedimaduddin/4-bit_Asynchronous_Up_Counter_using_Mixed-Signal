@@ -65,9 +65,8 @@ toggle for every negative edge of clock of the second and third
 T flip-flops, respectively
 </br>
 In the case of T flip-flops, assume the initial status from
-rightmost to leftmost is Q3Q2Q1Q0=0000. Here, Q3 & Q0 are
-MSB & LSB respectively. In Reference Waveform, we can see the output
-waveforms of Q0, Q1, Q2, and Q3, and the working of the
+rightmost to leftmost is Q<sub>3</sub>Q<sub>2</sub>Q<sub>1</sub>Q<sub>0</sub>=0000. Here, Q<sub>3</sub> & Q<sub>0</sub> are MSB & LSB respectively. In Reference Waveform, we can see the output
+waveforms of Q<sub>0</sub>, Q<sub>1</sub>, Q<sub>2</sub>, and Q<sub>3</sub>, and the working of the
 4-bit asynchronous up counter is described in Truth Table.
 
 ## Truth Table
