@@ -51,7 +51,7 @@ designing an analog circuit
 
 A 4-bit Asynchronous up counter contains four T flip-flops
 (digital block) and a multivibrator (analog block) as shown
-in Reference Circuit Diagram. It counts from 0 to 2 <sup>4</sup> -1, i.e. 15. All flip-flops
+in Reference Circuit Diagram. It counts from 0 to 2<sup>4</sup>-1, i.e. 15. All flip-flops
 have their T-input connected to 1. In each flip-flop, the output
 changes asynchronously on the negative edges of its clocks. In
 the first T flip-flop, the clock signal is directly applied, which
