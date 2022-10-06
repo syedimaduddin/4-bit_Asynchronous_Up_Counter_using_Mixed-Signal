@@ -166,7 +166,7 @@ endmodule
 
 ## Makerchip Plots
 
-![image]()
+![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Verilog%20Files/Makerchip%20Plot.jpg)
 
 ## Netlists
 
