@@ -120,7 +120,7 @@ https://www.veripool.org/verilator/
 ## Circuit Diagram in eSim
 
 The following is the schematic in eSim:
-![image]()
+![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Circuit%20Images/Schematic%20in%20esim.png)
 
 ## Verilog Code
 
@@ -129,6 +129,38 @@ The following is the schematic in eSim:
 ## Makerchip
 
 ```
+\TLV_version 1d: tl-x.org
+\SV
+/* verilator lint_off UNUSED*/  /* verilator lint_off DECLFILENAME*/  /* verilator lint_off BLKSEQ*/  /* verilator lint_off WIDTH*/  /* verilator lint_off SELRANGE*/  /* verilator lint_off PINCONNECTEMPTY*/  /* verilator lint_off DEFPARAM*/  /* verilator lint_off IMPLICIT*/  /* verilator lint_off COMBDLY*/  /* verilator lint_off SYNCASYNCNET*/  /* verilator lint_off UNOPTFLAT */  /* verilator lint_off UNSIGNED*/  /* verilator lint_off CASEINCOMPLETE*/  /* verilator lint_off UNDRIVEN*/  /* verilator lint_off VARHIDDEN*/  /* verilator lint_off CASEX*/  /* verilator lint_off CASEOVERLAP*/  /* verilator lint_off PINMISSING*/  /* verilator lint_off BLKANDNBLK*/  /* verilator lint_off MULTIDRIVEN*/  /* verilator lint_off WIDTHCONCAT*/  /* verilator lint_off ASSIGNDLY*/  /* verilator lint_off MODDUP*/  /* verilator lint_off STMTDLY*/  /* verilator lint_off LITENDIAN*/  /* verilator lint_off INITIALDLY*/ 
+
+//Your Verilog/System Verilog Code Starts Here:
+module tff ( input clk, input rstn, input t, output reg q);  
+  
+  always @ (posedge clk) begin  
+    if (!rstn)  
+      q <= 0;  
+    else  
+        if (t)  
+            q <= ~q;  
+        else  
+            q <= q;  
+  end  
+endmodule  
+
+//Top Module Code Starts here:
+	module top(input logic clk, input logic reset, input logic [31:0] cyc_cnt, output logic passed, output logic failed);
+		logic  rstn;//input
+		logic  t;//input
+		logic  q;//output
+//The $random() can be replaced if user wants to assign values
+		assign rstn = $random();
+		assign t = $random();
+		tff tff(.clk(clk), .rstn(rstn), .t(t), .q(q));
+	
+\TLV
+//Add \TLV here if desired                                     
+\SV
+endmodule
 
 ```
 
@@ -141,10 +173,6 @@ The following is the schematic in eSim:
 ![image]()
 
 ## NgSpice Plots
-
-![image]()
-
-## GAW Plots
 
 ![image]()
 
