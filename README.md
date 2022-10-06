@@ -124,7 +124,7 @@ The following is the schematic in eSim:
 
 ## Verilog Code
 
-![image]()
+![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Verilog%20Files/Verilog%20Code%20Image.jpg)
 
 ## Makerchip
 
