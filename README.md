@@ -120,7 +120,7 @@ https://www.veripool.org/verilator/
 ## Circuit Diagram in eSim
 
 The following is the schematic in eSim:
-![image]()
+![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Circuit%20Images/Schematic%20in%20esim.png)
 
 ## Verilog Code
 
