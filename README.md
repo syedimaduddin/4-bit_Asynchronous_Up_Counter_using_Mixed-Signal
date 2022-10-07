@@ -45,7 +45,7 @@ designing an analog circuit
 
 ## Reference Waveform
 
-![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Counter_using_Mixed-Signal/blob/main/Circuit%20Images/Waveform.png)
+![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Circuit_Images/Waveform.png)
 
 ## Circuit Details
 
@@ -120,11 +120,11 @@ https://www.veripool.org/verilator/
 ## Circuit Diagram in eSim
 
 The following is the schematic in eSim:
-![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Circuit%20Images/Schematic%20in%20esim.png)
+![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Circuit_Images/Schematic_in_esim.png)
 
 ## Verilog Code
 
-![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Verilog%20Files/Verilog%20Code%20Image.jpg)
+![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Verilog_Files/Verilog_Code%20Image.jpg)
 
 ## Makerchip
 
@@ -166,7 +166,7 @@ endmodule
 
 ## Makerchip Plots
 
-![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Verilog%20Files/Makerchip%20Plot.jpg)
+![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Verilog_Files/Makerchip_Plot.jpg)
 
 ## Netlists
 
@@ -174,7 +174,7 @@ endmodule
 
 ## NgSpice Plots
 
-![image]()
+![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Circuit_Images/Waveform_in_ngspice.png)
 
 ## Steps to run generate NgVeri Model
 
