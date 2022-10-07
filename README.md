@@ -170,10 +170,9 @@ endmodule
 4. Run ngspice:</br>
    `ngspice four_bit_async_counter_Syed_Imaduddin.cir.out`</br>
 5. To run the project in eSim:
-
-- Run eSim</br>
-- Load the project</br>
-- Open eeSchema</br>
+	- Run eSim</br>
+	- Load the project</br>
+	- Open eeSchema</br>
 
 ## References
 
