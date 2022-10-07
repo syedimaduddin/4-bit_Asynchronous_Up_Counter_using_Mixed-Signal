@@ -195,7 +195,7 @@ endmodule
 3. Change directory:</br>
    `cd eSim Project Files/`</br>
 4. Run ngspice:</br>
-   `ngspice file_name.cir.out`</br>
+   `ngspice four_bit_async_counter_Syed_Imaduddin.cir.out`</br>
 5. To run the project in eSim:
 
 - Run eSim</br>
