@@ -41,7 +41,7 @@ designing an analog circuit
 
 ## Reference Circuit Diagram
 
-![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Counter_using_Mixed-Signal/blob/main/Circuit%20Images/Circuit%20Design.png)
+![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Circuit_Images/Circuit_Design.png)
 
 ## Reference Waveform
 
