@@ -26,7 +26,7 @@
 
 ## Abstract
 
-In recent years, asynchronous counters have gained popularity due to their low power consumption and low noise emissions. Furthermore, they are used as frequency dividers, as divide-by-N counters. This project involves designing a 4-bit asynchronous up counter. The circuit will consist of T flip-flops, a multivibrator and an Analog to Digital Converter (ADC), used as an interface between digital and analog signal. The emphasis of the project is to design a mixed signal circuit of a 4-bit asynchronous up counter. The T flip-flops are for designing a digital circuit written in Verilog and the multivibrator is for designing an analog circuit.
+Asynchronous counters have recently gained popularity due to their low power consumption and low noise emissions. Furthermore, they are used as frequency dividers, as divide-by-N counters. This project involves the design of a 4-bit asynchronous up counter using eSim and Ngspice tools. Specifically, it focuses on the development of a mixed signal circuit for a 4-bit asynchronous up counter. There are T flip-flops, a ring oscillator, an Analog to Digital Converter (ADC), and a Digital to Analog Converter (DAC) in the circuit. This design uses Verilog for the T flip-flops and Sky130 components for the ring oscillator.
 
 ## Reference Circuit Diagram
 
@@ -38,9 +38,9 @@ In recent years, asynchronous counters have gained popularity due to their low p
 
 ## Circuit Details
 
-A 4-bit Asynchronous up counter contains four T flip-flops (digital block) and a multivibrator (analog block) as shown in Reference Circuit Diagram. It counts from 0 to 2<sup>4</sup>-1, i.e. 15. All flip-flops have their T-input connected to 1. In each flip-flop, the output changes asynchronously on the negative edges of its clocks. In the first T flip-flop, the clock signal is directly applied, which is a multivibrator signal converted to digital by ADC. When the clock signal is on a negative edge, the output of the first T flip-flop toggles. A second T flip-flop is controlled by the output of the first T flip-flop. Thus, every negative edge of the output of the first T flip-flop toggles the output of the second T flip-flop. In the same way, the third and fourth T flip-flops toggle for every negative edge of clock of the second and third T flip-flops, respectively.
+A 4-bit Asynchronous up counter contains four T flip-flops (digital block) and a ring oscillator (analog block) as shown in the Reference Circuit Diagram. It counts from 0 to 2<sup>4</sup>-1, i.e. 15. All flip-flops have their T-input connected to 1. In each flip-flop, the output changes asynchronously on the negative edges of its clocks. In the first T flip-flop, the clock signal is directly applied, which is a ring oscillator signal converted to digital by ADC. When the clock signal is on a negative edge, the output of the first T flip-flop toggles. A second T flip-flop is controlled by the output of the first T flip-flop. Thus, every negative edge of the output of the first T flip-flop toggles the output of the second T flip-flop. In the same way, the third and fourth T flip-flops toggle for every negative edge of clock of the second and third T flip-flops, respectively.
 </br>
-In the case of T flip-flops, assume the initial status from rightmost to leftmost is Q<sub>3</sub>Q<sub>2</sub>Q<sub>1</sub>Q<sub>0</sub>=0000. Here, Q<sub>3</sub> & Q<sub>0</sub> are MSB & LSB respectively. In Reference Waveform, we can see the output waveforms of Q<sub>0</sub>, Q<sub>1</sub>, Q<sub>2</sub>, and Q<sub>3</sub>, and the working of the 4-bit asynchronous up counter is described in Truth Table.
+In the case of T flip-flops, assume the initial status from rightmost to leftmost is Q<sub>3</sub>Q<sub>2</sub>Q<sub>1</sub>Q<sub>0</sub>=0000. Here, Q<sub>3</sub> & Q<sub>0</sub> are MSB & LSB respectively. In the Reference Waveform, we can see the output waveforms of Q<sub>0</sub>, Q<sub>1</sub>, Q<sub>2</sub>, and Q<sub>3</sub>, and the working of the 4-bit asynchronous up counter is described in Truth Table.
 
 ## Truth Table
 
