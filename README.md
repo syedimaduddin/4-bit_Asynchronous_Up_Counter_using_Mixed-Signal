@@ -209,16 +209,15 @@ endmodule
 
 ## Acknowlegdements
 
-1. FOSSEE, IIT Bombay
+1. FOSSEE, IIT Bombay, https://fossee.in/
 2. Steve Hoover, Founder, Redwood EDA
 3. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
 4. Sumanto Kar, eSim Team, FOSSEE
-5. http://iitb.ac.in/
-6. https://www.google.co.in/
-7. https://fossee.in/
-8. https://spoken-tutorial.org/
-9. https://www.vlsisystemdesign.com/
-10. https://www.c2s.gov.in/
+5. Indian Institute of Technology Bombay, http://iitb.ac.in/
+6. Google, https://www.google.co.in/
+7. Spoken Tutorial, https://spoken-tutorial.org/
+8. VLSI System Design, https://www.vlsisystemdesign.com/
+9. Chips to Startup (C2S), https://www.c2s.gov.in/
 
 # Author
 
