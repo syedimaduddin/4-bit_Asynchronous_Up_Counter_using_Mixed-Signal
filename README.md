@@ -143,7 +143,7 @@ endmodule
 
 ## Netlists
 
-![image]()
+![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Circuit_Images/Netlist_Image.png)
 
 ## NgSpice Plots
 
@@ -178,7 +178,7 @@ endmodule
 ## References
 
 1. Digital Electronics: 4 Bit Asynchronous Up Counter, Neso Academy, https://www.youtube.com/watch?v=eEeBh8jfDjg
-2. LTspice tutorial 13 : Design and simulation of multivibrator circuit using op-amp, Circuit Generator, https://youtu.be/Zch8gf0l-sI
+2. Cadence Tutorial for Ring Oscillator with Parametric sweep, GoldLighT Technologies Pvt. Ltd., https://youtu.be/t5emusIwI70
 
 ## Acknowlegdements
 
