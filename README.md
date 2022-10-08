@@ -104,12 +104,12 @@ The following is the schematic in eSim:
 ```
 \TLV_version 1d: tl-x.org
 \SV
-/* verilator lint_off UNUSED*/  /* verilator lint_off DECLFILENAME*/  /* verilator lint_off BLKSEQ*/  /* verilator lint_off WIDTH*/  /* verilator lint_off SELRANGE*/  /* verilator lint_off PINCONNECTEMPTY*/  /* verilator lint_off DEFPARAM*/  /* verilator lint_off IMPLICIT*/  /* verilator lint_off COMBDLY*/  /* verilator lint_off SYNCASYNCNET*/  /* verilator lint_off UNOPTFLAT */  /* verilator lint_off UNSIGNED*/  /* verilator lint_off CASEINCOMPLETE*/  /* verilator lint_off UNDRIVEN*/  /* verilator lint_off VARHIDDEN*/  /* verilator lint_off CASEX*/  /* verilator lint_off CASEOVERLAP*/  /* verilator lint_off PINMISSING*/  /* verilator lint_off BLKANDNBLK*/  /* verilator lint_off MULTIDRIVEN*/  /* verilator lint_off WIDTHCONCAT*/  /* verilator lint_off ASSIGNDLY*/  /* verilator lint_off MODDUP*/  /* verilator lint_off STMTDLY*/  /* verilator lint_off LITENDIAN*/  /* verilator lint_off INITIALDLY*/ 
+/* verilator lint_off UNUSED*/  /* verilator lint_off DECLFILENAME*/  /* verilator lint_off BLKSEQ*/  /* verilator lint_off WIDTH*/  /* verilator lint_off SELRANGE*/  /* verilator lint_off PINCONNECTEMPTY*/  /* verilator lint_off DEFPARAM*/  /* verilator lint_off IMPLICIT*/  /* verilator lint_off COMBDLY*/  /* verilator lint_off SYNCASYNCNET*/  /* verilator lint_off UNOPTFLAT */  /* verilator lint_off UNSIGNED*/  /* verilator lint_off CASEINCOMPLETE*/  /* verilator lint_off UNDRIVEN*/  /* verilator lint_off VARHIDDEN*/  /* verilator lint_off CASEX*/  /* verilator lint_off CASEOVERLAP*/  /* verilator lint_off PINMISSING*/  /* verilator lint_off BLKANDNBLK*/  /* verilator lint_off MULTIDRIVEN*/  /* verilator lint_off WIDTHCONCAT*/  /* verilator lint_off ASSIGNDLY*/  /* verilator lint_off MODDUP*/  /* verilator lint_off STMTDLY*/  /* verilator lint_off LITENDIAN*/  /* verilator lint_off INITIALDLY*/
 
 //Your Verilog/System Verilog Code Starts Here:
-module tff ( input clk, input rstn, input t, output reg q);  
+module imad_tff ( input clk, input rstn, input t, output reg q);  
   
-  always @ (posedge clk) begin  
+  always @ (negedge clk) begin  
     if (!rstn)  
       q <= 0;  
     else  
@@ -128,13 +128,12 @@ endmodule
 //The $random() can be replaced if user wants to assign values
 		assign rstn = $random();
 		assign t = $random();
-		tff tff(.clk(clk), .rstn(rstn), .t(t), .q(q));
+		imad_tff imad_tff(.clk(clk), .rstn(rstn), .t(t), .q(q));
 	
 \TLV
 //Add \TLV here if desired                                     
 \SV
 endmodule
-
 ```
 
 ## Makerchip Plots
@@ -143,7 +142,8 @@ endmodule
 
 ## Netlists
 
-![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Circuit_Images/Netlist_Image.png)
+![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Circuit_Images/Netlist_Image_1.png)
+![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Circuit_Images/Netlist_Image_2.png)
 
 ## NgSpice Plots
 
@@ -166,7 +166,7 @@ endmodule
 2. Clone this project using the following command:</br>
    `git clone https://github.com/syedimaduddin/4-bit_Asynchronous_Counter_using_Mixed-Signal.git`</br>
 3. Change directory:</br>
-   `cd eSim_Project_Files/`</br>
+   `cd eSim_Project_Files/four_bit_async_counter_Syed_Imaduddin`</br>
 4. Run ngspice:</br>
    `ngspice four_bit_async_counter_Syed_Imaduddin.cir.out`</br>
 5. To run the project in eSim:
