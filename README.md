@@ -166,7 +166,7 @@ endmodule
 2. Clone this project using the following command:</br>
    `git clone https://github.com/syedimaduddin/4-bit_Asynchronous_Counter_using_Mixed-Signal.git`</br>
 3. Change directory:</br>
-   `cd eSim_Project_Files/four_bit_async_counter_Syed_Imaduddin`</br>
+   `cd eSim_Project_Files/four_bit_async_counter_Syed_Imaduddin/`</br>
 4. Run ngspice:</br>
    `ngspice four_bit_async_counter_Syed_Imaduddin.cir.out`</br>
 5. To run the project in eSim:
