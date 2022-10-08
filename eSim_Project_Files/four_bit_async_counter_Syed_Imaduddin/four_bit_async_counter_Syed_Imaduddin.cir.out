@@ -1,18 +1,14 @@
-* d:\fossee_imad_projects\four_bit_async_counter_syed_imaduddin_sky130_with_changes\four_bit_async_counter_syed_imaduddin_sky130_with_changes.cir
+* d:\imad_work_folder\vlsi\competitions\mixed_signal_competition(24.sept.2022)\github_repo\asynchronous-counter-4_bit\esim_project_files\four_bit_async_counter_syed_imaduddin\four_bit_async_counter_syed_imaduddin.cir
 
-.include "D:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
-.include "D:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
 .include "D:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+.lib "D:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "D:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+.include "D:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+.include "D:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
 .include "D:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
 .include "D:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
-.lib "D:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
-.include "D:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
 v1 in gnd  dc 1.8
 * u3  in plot_v1
-* u4  net-_u12-pad4_ net-_u12-pad5_ net-_u12-pad6_ net-_u13-pad1_ tff
-* u5  net-_u13-pad1_ net-_u12-pad5_ net-_u12-pad6_ net-_u13-pad2_ tff
-* u6  net-_u13-pad2_ net-_u12-pad5_ net-_u12-pad6_ net-_u13-pad3_ tff
-* u9  net-_u13-pad3_ net-_u12-pad5_ net-_u12-pad6_ net-_u13-pad4_ tff
 v2  rst gnd pulse(0 1.8 0.1m 0.1m 0.1m 1000 200)
 * u7  q0 plot_v1
 * u8  q1 plot_v1
@@ -38,24 +34,28 @@ xsc3 net-_sc1-pad1_ gnd sky130_fd_pr__cap_mim_m3_1 W=10000 L=10000 MF=1
 xsc10 net-_sc10-pad1_ gnd sky130_fd_pr__cap_mim_m3_1 W=10000 L=10000 MF=1
 xsc13 clk gnd sky130_fd_pr__cap_mim_m3_1 W=10000 L=10000 MF=1
 v3  t gnd pulse(0 1.8 0.1m 0.1m 0.1m 1000 200)
-a1 [net-_u12-pad4_ ] [net-_u12-pad5_ ] [net-_u12-pad6_ ] [net-_u13-pad1_ ] u4
-a2 [net-_u13-pad1_ ] [net-_u12-pad5_ ] [net-_u12-pad6_ ] [net-_u13-pad2_ ] u5
-a3 [net-_u13-pad2_ ] [net-_u12-pad5_ ] [net-_u12-pad6_ ] [net-_u13-pad3_ ] u6
-a4 [net-_u13-pad3_ ] [net-_u12-pad5_ ] [net-_u12-pad6_ ] [net-_u13-pad4_ ] u9
-a5 [clk rst t ] [net-_u12-pad4_ net-_u12-pad5_ net-_u12-pad6_ ] u12
-a6 [net-_u13-pad1_ net-_u13-pad2_ net-_u13-pad3_ net-_u13-pad4_ ] [q0 q1 q2 q3 ] u13
-* Schematic Name:                             tff, NgSpice Name: tff
-.model u4 tff(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
-* Schematic Name:                             tff, NgSpice Name: tff
-.model u5 tff(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
-* Schematic Name:                             tff, NgSpice Name: tff
-.model u6 tff(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
-* Schematic Name:                             tff, NgSpice Name: tff
-.model u9 tff(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* u4  net-_u12-pad4_ net-_u12-pad5_ net-_u12-pad6_ net-_u13-pad1_ imad_tff
+* u5  net-_u13-pad1_ net-_u12-pad5_ net-_u12-pad6_ net-_u13-pad2_ imad_tff
+* u6  net-_u13-pad2_ net-_u12-pad5_ net-_u12-pad6_ net-_u13-pad3_ imad_tff
+* u9  net-_u13-pad3_ net-_u12-pad5_ net-_u12-pad6_ net-_u13-pad4_ imad_tff
+a1 [clk rst t ] [net-_u12-pad4_ net-_u12-pad5_ net-_u12-pad6_ ] u12
+a2 [net-_u13-pad1_ net-_u13-pad2_ net-_u13-pad3_ net-_u13-pad4_ ] [q0 q1 q2 q3 ] u13
+a3 [net-_u12-pad4_ ] [net-_u12-pad5_ ] [net-_u12-pad6_ ] [net-_u13-pad1_ ] u4
+a4 [net-_u13-pad1_ ] [net-_u12-pad5_ ] [net-_u12-pad6_ ] [net-_u13-pad2_ ] u5
+a5 [net-_u13-pad2_ ] [net-_u12-pad5_ ] [net-_u12-pad6_ ] [net-_u13-pad3_ ] u6
+a6 [net-_u13-pad3_ ] [net-_u12-pad5_ ] [net-_u12-pad6_ ] [net-_u13-pad4_ ] u9
 * Schematic Name:                             adc_bridge_3, NgSpice Name: adc_bridge
 .model u12 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
 * Schematic Name:                             dac_bridge_4, NgSpice Name: dac_bridge
 .model u13 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             imad_tff, NgSpice Name: imad_tff
+.model u4 imad_tff(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             imad_tff, NgSpice Name: imad_tff
+.model u5 imad_tff(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             imad_tff, NgSpice Name: imad_tff
+.model u6 imad_tff(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             imad_tff, NgSpice Name: imad_tff
+.model u9 imad_tff(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
 .tran 10e-03 2.5e-00 0e-00
 
 * Control Statements 

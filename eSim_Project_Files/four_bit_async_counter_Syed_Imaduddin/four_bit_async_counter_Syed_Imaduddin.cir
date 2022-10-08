@@ -1,6 +1,6 @@
-* D:\FOSSEE_Imad_Projects\four_bit_async_counter_Syed_Imaduddin_sky130_with_changes\four_bit_async_counter_Syed_Imaduddin_sky130_with_changes.cir
+* D:\Imad_Work_Folder\VLSI\Competitions\Mixed_Signal_Competition(24.Sept.2022)\GitHub_Repo\Asynchronous-Counter-4_Bit\eSim_Project_Files\four_bit_async_counter_Syed_Imaduddin\four_bit_async_counter_Syed_Imaduddin.cir
 
-* EESchema Netlist Version 1.1 (Spice format) creation date: 10/7/2022 6:03:36 PM
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/8/2022 11:06:10 AM
 
 * To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
 * To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
@@ -8,10 +8,6 @@
 * Sheet Name: /
 v1  in GND DC		
 U3  in plot_v1		
-U4  Net-_U12-Pad4_ Net-_U12-Pad5_ Net-_U12-Pad6_ Net-_U13-Pad1_ tff		
-U5  Net-_U13-Pad1_ Net-_U12-Pad5_ Net-_U12-Pad6_ Net-_U13-Pad2_ tff		
-U6  Net-_U13-Pad2_ Net-_U12-Pad5_ Net-_U12-Pad6_ Net-_U13-Pad3_ tff		
-U9  Net-_U13-Pad3_ Net-_U12-Pad5_ Net-_U12-Pad6_ Net-_U13-Pad4_ tff		
 v2  rst GND pulse		
 U7  Q0 plot_v1		
 U8  Q1 plot_v1		
@@ -37,5 +33,9 @@ SC3  Net-_SC1-Pad1_ GND sky130_fd_pr__cap_mim_m3_1
 SC10  Net-_SC10-Pad1_ GND sky130_fd_pr__cap_mim_m3_1		
 SC13  clk GND sky130_fd_pr__cap_mim_m3_1		
 v3  t GND pulse		
+U4  Net-_U12-Pad4_ Net-_U12-Pad5_ Net-_U12-Pad6_ Net-_U13-Pad1_ imad_tff		
+U5  Net-_U13-Pad1_ Net-_U12-Pad5_ Net-_U12-Pad6_ Net-_U13-Pad2_ imad_tff		
+U6  Net-_U13-Pad2_ Net-_U12-Pad5_ Net-_U12-Pad6_ Net-_U13-Pad3_ imad_tff		
+U9  Net-_U13-Pad3_ Net-_U12-Pad5_ Net-_U12-Pad6_ Net-_U13-Pad4_ imad_tff		
 
 .end
