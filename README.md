@@ -144,8 +144,7 @@ endmodule
 
 
 
-To view the netlist, Click Here👇
-<details><summary>Netlist:</summary>
+
 
 ```
 * d:\imad_work_folder\vlsi\competitions\mixed_signal_competition(24.sept.2022)\github_repo\asynchronous-counter-4_bit\esim_project_files\four_bit_async_counter_syed_imaduddin\four_bit_async_counter_syed_imaduddin.cir
@@ -224,7 +223,7 @@ plot v(t)
 .endc
 .end
 ```
-</details><br>
+</details><
 
 ## NgSpice Plots
 
