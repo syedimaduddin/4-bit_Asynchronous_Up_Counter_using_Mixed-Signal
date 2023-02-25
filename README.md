@@ -142,8 +142,8 @@ endmodule
 
 ## Netlists
 
-#![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Circuit_Images/Netlist_Image_1.png)
-#![image](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal/blob/main/Circuit_Images/Netlist_Image_2.png)
+
+
 To view the netlist, Click Here👇
 <details><summary>Netlist:</summary>
 
