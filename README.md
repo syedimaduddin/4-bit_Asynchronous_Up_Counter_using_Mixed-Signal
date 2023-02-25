@@ -223,7 +223,7 @@ plot v(t)
 .endc
 .end
 ```
-</details><
+
 
 ## NgSpice Plots
 
